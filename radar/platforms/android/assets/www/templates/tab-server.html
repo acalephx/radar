@@ -1,0 +1,19 @@
+﻿<ion-view view-title="无线设备">
+    <ion-nav-bar class="bar-dark" align-title="center">
+        <ion-nav-buttons side="right">
+            <button class="button icon button-clear ion-refresh" ng-click="refresh()"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="wld in wlds">
+                <img ng-src="{{getImg(wld)}}">
+                <h2>{{wld.name}}</h2>
+                <p>{{wld.mac}}</p>
+                <span style="position: absolute;right:0.64px;top: 16px;">{{wld.dbm_avg}}</span>
+                <span style="position: absolute;right:0.64px;top: 32px;">{{wld.reg_cnt}}</span>
+                <!--<i class="icon ion-chevron-right icon-accessory" ng-style="wld.con==1||wld.ava==0?{'background-color':'gray'}:{'background-color':'red'}"></i>-->
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

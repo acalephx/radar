@@ -1,0 +1,19 @@
+﻿<ion-view view-title="扫描记录">
+    <ion-nav-bar class="bar-dark" align-title="center">
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list>
+            <ion-item class="item-avatar item-icon-right" ng-repeat="record in records" ng-href="#/scan-detail/{{$index}}">
+                <img src="img/gps.png">
+                <div>
+                    <span style="font-size:small">LON:{{record.lon}}&nbsp;&nbsp;&nbsp;LAT:{{record.lat}}</span>
+                </div>
+                <div>
+                    <span style="font-size:small">ACC:{{record.acc}}&nbsp;&nbsp;&nbsp;TIME:</span>
+                    <span style="font-size:small" ng-bind="toDate(record.time)"></span>
+                </div>
+ 
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

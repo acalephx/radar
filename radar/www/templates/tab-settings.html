@@ -1,0 +1,27 @@
+﻿<ion-view view-title="Account">
+  <ion-content>
+    <ion-list>
+    <ion-toggle  ng-model="settings.autoScan">
+        自动扫描
+    </ion-toggle>
+        <ion-item>
+            <button ng-click="clearTable()">清空数据库</button>
+        </ion-item>
+        <ion-item class="item-input">
+            <span class="input-label">GPS超时</span>
+            <input type="text" ng-model="settings.gpsTimeout"/>      
+            <span class="input-label">毫秒</span>      
+        </ion-item>
+        <ion-item class="item-input">
+            <span class="input-label">蓝牙超时</span>
+            <input type="text" ng-model="settings.bleTimeout" />       
+            <span class="input-label">秒</span>     
+        </ion-item>
+        <ion-item class="item-input">
+            <span class="input-label">扫描超时</span>
+            <input type="text" ng-model="settings.promiseTimeout" />     
+            <span class="input-label">毫秒</span>      
+        </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

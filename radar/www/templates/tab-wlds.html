@@ -1,0 +1,25 @@
+﻿<ion-view view-title="无线设备">
+    <ion-nav-bar class="bar-dark" align-title="center">
+        <ion-nav-buttons side="left">
+            <button class="button icon button-clear ion-radio-waves" ng-click="startScan()"></button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right">
+            <button class="button icon button-clear ion-ios-download" ng-click="saveWlds()"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-content>
+        <ion-list> 
+            <ion-item>
+                <span style="font-size:small">LON:{{location.lon}}&nbsp;&nbsp;&nbsp;LAT:{{location.lat}}&nbsp;&nbsp;&nbsp;ACC:{{location.acc}}</span>
+            </ion-item>           
+            <ion-item class="item-avatar item-icon-right" ng-repeat="wld in wlds">
+                <img ng-src="{{getImg(wld)}}">
+                <h2>{{wld.name}}</h2>
+                <p>{{wld.id}}</p>
+                <span style="position: absolute;right:0.64px;top: 16px;">{{wld.dbm}}</span>
+                <span style="position: absolute;right:0.64px;top: 32px;">{{wld.reg}}</span>
+                <!--<i class="icon ion-chevron-right icon-accessory" ng-style="wld.con==1||wld.ava==0?{'background-color':'gray'}:{'background-color':'red'}"></i>-->
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

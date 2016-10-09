@@ -1,0 +1,70 @@
+{
+    "cordova-sqlite-storage": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/litehelpers/Cordova-sqlite-storage",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-ble-central": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/don/cordova-plugin-ble-central.git",
+            "subdir": "."
+        }
+    },
+    "com.ict.healthyun-lbs": {
+        "source": {
+            "type": "local",
+            "path": "D:\\工作\\中科院\\lbs"
+        }
+    },
+    "com.pylonproducts.wifiwizard": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/parsonsmatt/WifiWizard.git",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-network-information": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-network-information"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-device": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-device"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-app-version": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/whiteoctober/cordova-plugin-app-version",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
